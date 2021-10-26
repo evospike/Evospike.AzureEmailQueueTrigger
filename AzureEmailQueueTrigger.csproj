@@ -13,6 +13,8 @@
     <Title>Evospike.AzureEmailQueueTrigger</Title>
     <Description>This package is designed to use Azure Queue Storage in a very simple way to send emails</Description>
     <PackageVersion>1.0.0</PackageVersion>
+    <PackageIconUrl>https://raw.githubusercontent.com/evospike/Evospike.AzureEmailQueueTrigger/master/LICENSE</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/evospike/Evospike.AzureEmailQueueTrigger.git</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
