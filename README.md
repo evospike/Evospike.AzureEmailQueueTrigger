@@ -13,8 +13,7 @@ In `appsettings.json` add a `"AzureWebJobsStorage"` properties:
 
 ```json
 {
-    //"AzureWebJobsStorage": "{YOUR STORAGE CONNECTION}"
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true"
+    "AzureWebJobsStorage": "{YOUR STORAGE CONNECTION}"
 }
 ```
 
@@ -49,7 +48,7 @@ public class ItemsController : ControllerBase
 
 		var adminEmail = new SendEmailCommand()
 		{
-			To = "enmanuellopez02m@gmail.com",
+			To = "prueba@gmail.com",
 			Subject = "New Contact",
 			Body = $"{contactName} has reached out via contact form. Please respond back at {emailAddress}"
 		};
@@ -177,7 +176,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AwesomeShop.AzureFunctions.Email
+namespace AzureFunctions.Email
 {
 	public interface ISendEmailCommandHandler
 	{
