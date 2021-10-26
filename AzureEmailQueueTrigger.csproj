@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Evospike.AzureEmailQueueTrigger</PackageId>
+    <Authors>Enmanuel López</Authors>
+    <Copyright>evospike.com</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Owners>Enmanuel López</Owners>
+    <Summary>This package is designed to use Azure Queue Storage in a very simple way to send emails</Summary>
+    <PackageTags>.NETCore</PackageTags>
+    <Title>Evospike.AzureEmailQueueTrigger</Title>
+    <Description>This package is designed to use Azure Queue Storage in a very simple way to send emails</Description>
+    <PackageVersion>1.0.0</PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="Infrastructure\" />
+    <None Remove="WindowsAzure.Storage" />
+    <None Remove="Messages\" />
+    <None Remove="MessageSerializer\" />
+    <None Remove="QueueConnection\" />
+    <None Remove="NuGet.Build.Packaging" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Messages\" />
+    <Folder Include="MessageSerializer\" />
+    <Folder Include="QueueConnection\" />
+  </ItemGroup>
+</Project>
